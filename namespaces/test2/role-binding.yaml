@@ -6,7 +6,7 @@
    namespace: test2
  subjects:
  - kind: ServiceAccount
-   name: ns-reconciler
+   name: ns-reconciler-test2
    namespace: config-management-system
  roleRef:
    kind: ClusterRole
