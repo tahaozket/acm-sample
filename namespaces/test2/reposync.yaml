@@ -1,0 +1,17 @@
+# ROOT_REPO/namespaces/NAMESPACE/repo-sync.yaml
+ # If you are using a Config Sync version earlier than 1.8.0,
+ # use: apiVersion: configsync.gke.io/v1alpha1
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: test6
+spec:
+  # Since this is for a namespace repository, the format should be unstructured
+  sourceFormat: unstructured
+  git:
+   repo: https://github.com/tahaozket/acm-sample2.git
+   revision: HEAD
+   branch: main
+   dir: "namespaces/test6"
+   auth: none
