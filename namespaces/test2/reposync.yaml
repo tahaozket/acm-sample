@@ -5,7 +5,7 @@ apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
   name: repo-sync
-  namespace: test6
+  namespace: test2
 spec:
   # Since this is for a namespace repository, the format should be unstructured
   sourceFormat: unstructured
